@@ -37,29 +37,29 @@ def lireson():
     music.config(text=music_name[0:-2])
 
 #icone
-imagee_icon = PhotoImage(file=r"C:lecteurmp3python\note-de-musique.png")
+imagee_icon = PhotoImage(file=r"C:/lecteurmp3python\note-de-musique.png")
 root.iconphoto(False, imagee_icon)
 
-Entete = PhotoImage(file=r"C:lecteurmp3python\entete.png")
+Entete = PhotoImage(file=r"C:/lecteurmp3python\entete.png")
 Label(root, image=Entete, bg="#0f1a2b", width=1587, height=250).pack()
 
-logo = PhotoImage(file=r"C:lecteurmp3python\casque.png")
+logo = PhotoImage(file=r"C:/lecteurmp3python\casque.png")
 Label(root, image=logo, bg="#ffffff").place(x=65, y=115)
 
-play_button = PhotoImage(file=r"C:lecteurmp3python\play1.png")
+play_button = PhotoImage(file=r"C:/lecteurmp3python\play1.png")
 Button(root, image=play_button, bg="#0f1a2b", bd=0, command=lireson).place(x=95, y=300)
 
 
-stop_button = PhotoImage(file=r"C:lecteurmp3python\stop.png")
+stop_button = PhotoImage(file=r"C:/lecteurmp3python\stop.png")
 Button(root, image=stop_button, bg="#0f1a2b", bd=0, command=mixer.music.stop).place(x=10, y=425)
 
-resume_button = PhotoImage(file=r"C:lecteurmp3python\resume.png")
+resume_button = PhotoImage(file=r"C:/lecteurmp3python\resume.png")
 Button(root, image=resume_button, bg="#0f1a2b", bd=0, command=mixer.music.unpause).place(x=100, y=550)
 
-pause_button = PhotoImage(file=r"C:lecteurmp3python\pause.png")
+pause_button = PhotoImage(file=r"C:/lecteurmp3python\pause.png")
 Button(root, image=pause_button, bg="#0f1a2b", bd=0, command=mixer.music.pause).place(x=175, y=425)
 
-volume_moin_button = PhotoImage(file=r"C:lecteurmp3python\speaker-g35ce87ee6_640.png" ,width=50, height=50)
+volume_moin_button = PhotoImage(file=r"C:/lecteurmp3python\speaker-g35ce87ee6_640.png" ,width=50, height=50)
 Button(root, image=volume_moin_button, bg="#0f1a2b", bd=0, command=mixer.music.set_volume).place(x=5 ,y=525)
 
 ###label
@@ -68,7 +68,7 @@ music = Label(root, text="", font="arial15", fg="white", bg="#0f1a2b")
 music.place(x=150, y=360, anchor="center")
 
 ###Music
-Menu = PhotoImage(file=r"C:lecteurmp3python\menu.png")
+Menu = PhotoImage(file=r"C:/lecteurmp3python\menu.png")
 Label(root, image=Menu, bg="#0f1a2b", width=575, height=550).pack(padx=12, pady=8, side=RIGHT)
 
 music_frame = Frame(root, bd=2, relief=RIDGE)
